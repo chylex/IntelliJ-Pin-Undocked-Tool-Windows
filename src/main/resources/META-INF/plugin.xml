@@ -1,0 +1,19 @@
+<idea-plugin>
+  <id>com.chylex.intellij.pinundockedtoolwindows</id>
+  <name>Pin Undocked Tool Windows</name>
+  <vendor url="https://chylex.com">chylex</vendor>
+  
+  <description><![CDATA[
+    Forces tool windows in "Undock" mode to stay visible when something tries to steal focus.
+  ]]></description>
+  
+  <depends>com.intellij.modules.platform</depends>
+  
+  <extensions defaultExtensionNs="com.intellij">
+    <postStartupActivity implementation="com.chylex.intellij.pinundockedtoolwindows.ProjectActivityListener" />
+  </extensions>
+  
+  <applicationListeners>
+    <listener class="com.chylex.intellij.pinundockedtoolwindows.DynamicPluginListener" topic="com.intellij.ide.plugins.DynamicPluginListener" />
+  </applicationListeners>
+</idea-plugin>

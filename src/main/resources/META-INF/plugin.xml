@@ -7,6 +7,14 @@
     Forces tool windows in "Undock" mode to stay visible when something tries to steal focus.
   ]]></description>
   
+  <change-notes><![CDATA[
+    <b>Version 1.0.0</b>
+    <ul>
+      <li>Prevents "Undock" tool windows from hiding when focus changes.</li>
+      <li>Attempts to allow hiding "Undock" tool windows when the focus change was caused by clicking a button.</li>
+    </ul>
+  ]]></change-notes>
+  
   <depends>com.intellij.modules.platform</depends>
   
   <extensions defaultExtensionNs="com.intellij">

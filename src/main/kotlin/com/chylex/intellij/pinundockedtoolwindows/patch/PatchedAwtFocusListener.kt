@@ -22,6 +22,10 @@ class PatchedAwtFocusListener(internal val original: AWTEventListener) : AWTEven
 	}
 	
 	private fun shouldIgnoreFocusLostEvent(currentlyFocused: Component?): Boolean {
+		if (AwtClickListener.wasPressingButton) {
+			return false
+		}
+		
 		val project = IdeFocusManager.getGlobalInstance().lastFocusedFrame?.project ?: return false
 		if (project.isDisposed || project.isDefault) {
 			return false

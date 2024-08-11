@@ -15,7 +15,7 @@ repositories {
 }
 
 intellij {
-	version.set("2023.1")
+	version.set("2024.2")
 	updateSinceUntilBuild.set(false)
 }
 

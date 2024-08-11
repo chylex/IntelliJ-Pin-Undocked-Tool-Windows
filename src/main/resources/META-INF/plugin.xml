@@ -8,6 +8,10 @@
   ]]></description>
   
   <change-notes><![CDATA[
+    <b>Version 1.1.0</b>
+    <ul>
+      <li>Allow hiding "Undock" tool windows for longer time after clicking a button.</li>
+    </ul>
     <b>Version 1.0.0</b>
     <ul>
       <li>Prevents "Undock" tool windows from hiding when focus changes.</li>
